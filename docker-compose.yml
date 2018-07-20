@@ -9,4 +9,5 @@ services:
           - "6006:6006"
         volumes:
           - ../../data:/home/sg/data
-          - ./scripts:/home/sg/scripts
+          - ../scripts:/home/sg/scripts
+          - ../outputs:/home/sg/outputs
