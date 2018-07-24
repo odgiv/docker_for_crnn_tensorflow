@@ -11,8 +11,6 @@ runtime: nvidia
 
 You can include ```entrypoint.sh``` file in your ```../scripts``` local directory if you want to run it when docker container starts running.
 
-**Note**: Run  ```export PYTHONPATH="${PYTHONPATH}:/home/od/CRNN_Tensorflow"``` before running anything else etc., training or testing commands.
-
 Since we're using tensorflow docker image for python3, you have run every command with ```python3``` instead just ```python```. 
 
 Commands:  
