@@ -1,6 +1,6 @@
 FROM tensorflow/tensorflow:1.3.0-gpu-py3
-
-RUN apt-get update && apt-get install -y --no-install-recommends python3-tk git wget && \
+ENV PYTHONPATH="${PYTHONPATH}:/home/od/CRNN_Tensorflow"
+RUN apt-get update && apt-get install -y --no-install-recommends python3-tk git && \
 	rm -rf /var/lib/apt/lists/*
 RUN pip install numpy==1.13.1 opencv_python==3.2.0.7 matplotlib==2.0.2 easydict==1.6
 
