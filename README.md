@@ -34,3 +34,9 @@ You can also continue the training process from the snapshot by:
 ```
 python3 tools/train_shadownet.py --dataset_dir path/to/your/tfrecords --weights_path path/to/your/last/checkpoint
 ```
+
+3. To prepare new training data for your own dataset.
+```
+python3 tools/write_text_features --dataset_dir path/to/your/dataset --save_dir path/to/tfrecords_dir
+```
+
