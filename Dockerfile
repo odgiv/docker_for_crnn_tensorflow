@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends python3-tk git 
 	rm -rf /var/lib/apt/lists/*
 RUN pip install numpy==1.13.1 opencv_python==3.2.0.7 matplotlib==2.0.2 easydict==1.6
 
-WORKDIR /home/sg/
-RUN mkdir /home/sg/data /home/sg/scripts /home/sg/outputs && git clone https://github.com/MaybeShewill-CV/CRNN_Tensorflow
-ENTRYPOINT ["/home/sg/scripts/entrypoint.sh"]
+WORKDIR /home/od/
+RUN mkdir /home/od/data /home/od/scripts /home/od/outputs && git clone https://github.com/MaybeShewill-CV/CRNN_Tensorflow
+ENTRYPOINT ["/home/od/scripts/entrypoint.sh"]

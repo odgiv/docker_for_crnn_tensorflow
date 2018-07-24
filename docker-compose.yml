@@ -8,6 +8,6 @@ services:
           - "8887:8887"
           - "6006:6006"
         volumes:
-          - ../../../data:/home/sg/data
-          - ../scripts:/home/sg/scripts
-          - ../outputs:/home/sg/outputs
+          - ../../../data:/home/od/data
+          - ../scripts:/home/od/scripts
+          - ../outputs:/home/od/outputs
