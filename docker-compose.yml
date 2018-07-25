@@ -2,12 +2,12 @@ version: '2.3'
 services:
     sg_crnn_tensor:
         build: .
-        runtime: nvidia
+        #runtime: nvidia
         stdin_open: true
         ports:
           - "8887:8887"
           - "6006:6006"
         volumes:
-          - ../../../data:/home/od/data
+          - ../data:/home/od/data
           - ../scripts:/home/od/scripts
           - ../outputs:/home/od/outputs
