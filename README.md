@@ -44,6 +44,6 @@ path/17/5/176_Nevadans_51437.jpg nevadans
 
 Then you can convert your dataset into tensorflow records by:
 ```
-python3 tools/write_text_features --dataset_dir path/to/your/dataset --save_dir path/to/tfrecords_dir
+python3 tools/write_text_features.py --dataset_dir path/to/your/dataset --save_dir path/to/tfrecords_dir
 ```
 
